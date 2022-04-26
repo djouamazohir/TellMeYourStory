@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Story</string>
+    <string name="button_allow_dialog_permission_not_accepted">allow</string>
+    <string name="button_deny_dialog_permission_not_accepted">deny</string>
+</resources>

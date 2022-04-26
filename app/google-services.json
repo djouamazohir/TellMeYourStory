@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "74373447776",
+    "project_id": "story-91b4a",
+    "storage_bucket": "story-91b4a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74373447776:android:200796faabca9388b64305",
+        "android_client_info": {
+          "package_name": "com.zohirdev.mystory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74373447776-tpoe6v26rhp16vsihe2tc7q2j85b52qi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWAWlPbxV_IyleGgNNHvQL-LuR6fMd6lg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74373447776-tpoe6v26rhp16vsihe2tc7q2j85b52qi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="55dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/alert_dialog_react_bg"
+    android:orientation="horizontal">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/reactLOVE"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:background="@drawable/love_anim" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/reactHAHA"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:background="@drawable/haha_anim" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/reactWOW"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:background="@drawable/wow_react" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/reactSAD"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:background="@drawable/sad_react" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/reactANGRY"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:background="@drawable/angry_react" />
+
+
+</LinearLayout>

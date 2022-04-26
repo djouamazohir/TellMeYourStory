@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">El Rayen House</string>
+    <string name="button_allow_dialog_permission_not_accepted">قبول</string>
+    <string name="button_deny_dialog_permission_not_accepted">رفض</string>
+
+
+    <string name="category_all">الكل</string>
+    <string name="category_phones">هواتف</string>
+    <string name="category_flexy">فليكسي</string>
+    <string name="category_sim_cards">بطاقات</string>
+    <string name="category_accessoiries">أكسيسوارات</string>
+    <string name="category_storage">تخزين</string>
+
+    <string name="DA">دج</string>
+
+    <string name="MyCart">سلة المشتريات</string>
+    <string name="MyOrders">طلباتي</string>
+    <string name="UserInformation">معلومات المستخدم</string>
+    <string name="ContactUs">تواصل معنا</string>
+    <string name="OrderConfirmation">تأكيد الطلب</string>
+    <string name="SignUp">تسجيل</string>
+
+    <string name="SaveInfo">حفظ المعلومات</string>
+    <string name="SendFeedBack">أرسال</string>
+    <string name="place_order">تقديم الطلب</string>
+    <string name="confirm">تأكيد</string>
+
+    <string name="NoResult">لا نتائج</string>
+
+
+    <string name="RemoveFromCart">حذف من السلة</string>
+    <string name="PlaceOrderNow">تقديم الطلب الآن</string>
+    <string name="CancelOrder">إلغاء الطلب</string>
+    <string name="ConfirmOrderReciever">تأكيد وصول الطلب</string>
+
+    <string name="MessageRemoveFromCart">هل أنت متأكد من حذف هذا المنتج من السلة ؟</string>
+    <string name="MessageCancelOrder">هل أنت متأكد من إلغاء هذا الطلب ؟</string>
+    <string name="MessageConfirmOrderReciever">هل أنت متأكد من أنك استلمت المنتج ؟</string>
+    <string name="MessageUserBlocked">حسابك مقيد</string>
+
+    <string name="MessageButtonYes">نعم</string>
+    <string name="MessageButtonNo">لا</string>
+    <string name="MessageButtonExit">خروج</string>
+    <string name="MessageButtonContactUs">تواصل معنا</string>
+
+
+    <string name="Quantities">الكمية</string>
+    <string name="Price">السعر</string>
+    <string name="Total">المجموع</string>
+
+
+    <string name="FullNameText">الإسم الكامل</string>
+    <string name="FullNameHint">مثال : ايدير راغب</string>
+
+    <string name="NumberPhoneText">رقم الهاتف</string>
+    <string name="NumberPhoneHint">مثال : +213*********</string>
+
+    <string name="LocationText">العنوان</string>
+    <string name="LocationHint">مثال : صالح بوشعور، الحروش، سكيكدة</string>
+
+    <string name="Product">المنتج</string>
+    <string name="TotalPay">مجموع الدفع</string>
+
+    <string name="ToastItemRemovedFromCart">تم حذف المنتج من السلة</string>
+    <string name="ToastOrderCalceled">تم إلغاء الطلب</string>
+    <string name="ToastConfirmeOrderReciever">تم تأكيد استلام المنتج</string>
+    <string name="ToastFeedBackSentSuccessfully">تم الإرسال بنجاح</string>
+    <string name="ToastDone">تم</string>
+    <string name="ToastEnterAllFiled">يجب ملء كل الحقول</string>
+    <string name="ToastNameError">الإسم الكامل يجب أن يحتوي على أكثر من 6 حروف</string>
+    <string name="ToastPhoneError">رقم الهاتف غير صالح</string>
+    <string name="ToastLocationError">يجب إدخال العنوان الكامل</string>
+    <string name="ToastNoImage">يجب وضع صورة شخصية</string>
+    <string name="ToastAccaountCreatedSuccessfully">تم إنشاء الحساب بنجاح</string>
+    <string name="ToastProfileUpdated">تم تحديث الحساب</string>
+
+    <string name="CreateNewUser">إنشاء الحساب</string>
+    <string name="EditInfo">تعديل</string>
+
+</resources>

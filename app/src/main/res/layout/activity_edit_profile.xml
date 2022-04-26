@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/ScreenBG"
+    tools:context=".activities.dashboard.EditProfileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonBack"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:text="back"
+            android:textAllCaps="false"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="تعديل الحساب"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="63dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarSize="0.5dp"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="2dp">
+
+                    <ImageView
+                        android:id="@+id/imageCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/buttonEditImageCover"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/edit_image"
+                        android:gravity="center" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imageProfile"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-75dp"
+                    android:background="@drawable/profile"
+                    android:elevation="2dp"
+                    tools:ignore="UnusedAttribute" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/buttonEditImageProfile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="-40dp"
+                    android:background="@drawable/edit_image"
+                    android:elevation="6dp"
+                    android:gravity="center"
+                    tools:ignore="RtlCompat,UnusedAttribute" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/textFullName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        style="@style/EditTextInScreen"
+                        android:gravity="center"
+                        android:hint="الإسم الكامل"
+                        android:minHeight="50dp"
+                        android:padding="5dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardSaveFullName"
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        style="@style/CardViewPostAddSave"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="4dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/buttonSaveFullName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="حفظ"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBarSaveFullName"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/textBio"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        style="@style/EditTextInScreen"
+                        android:gravity="center"
+                        android:hint="السيرة الذاتية"
+                        android:minHeight="50dp"
+                        android:padding="5dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        style="@style/CardViewPostAddSave"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="4dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/buttonSaveBio"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="حفظ"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBarSaveBio"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/textUsername"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        style="@style/EditTextInScreen"
+                        android:gravity="center"
+                        android:hint="إسم المستخدم"
+                        android:minHeight="50dp"
+                        android:padding="5dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        style="@style/CardViewPostAddSave"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="4dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/buttonSaveUsername"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="حفظ"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBarSaveUsername"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/textLinks"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        style="@style/EditTextInScreen"
+                        android:gravity="center"
+                        android:hint="الروابط"
+                        android:padding="5dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="60dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        style="@style/CardViewPostAddSave"
+                        android:layout_margin="5dp"
+                        app:cardCornerRadius="4dp">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/buttonSaveLinks"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:text="حفظ"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <ProgressBar
+                            android:id="@+id/progressBarSaveLinks"
+                            style="?android:attr/progressBarStyle"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

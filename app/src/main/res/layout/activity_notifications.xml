@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ScreenBG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.dashboard.NotificationsActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        app:cardCornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonBack"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@android:color/transparent"
+            android:text="back"
+            android:textAllCaps="false"
+            android:layout_gravity="start|center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="الإشعارات"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="63dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonNotifyFollowings"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_change_tab_bg"
+                android:text="FOLLOWINGS"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonNotifyComments"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_change_tab_bg"
+                android:text="COMMENTS"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonNotifyLikes"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_margin="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_change_tab_bg"
+                android:text="LIKES"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:shimmer_duration="1000">
+
+            <LinearLayout
+                android:id="@+id/linearShimmer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/shimmer_notification" />
+
+                <include layout="@layout/shimmer_notification" />
+
+                <include layout="@layout/shimmer_notification" />
+
+                <include layout="@layout/shimmer_notification" />
+
+                <include layout="@layout/shimmer_notification" />
+
+                <include layout="@layout/shimmer_notification" />
+
+                <include layout="@layout/shimmer_notification" />
+
+                <include layout="@layout/shimmer_notification" />
+
+                <include layout="@layout/shimmer_notification" />
+
+                <include layout="@layout/shimmer_notification" />
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
